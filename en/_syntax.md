@@ -72,9 +72,9 @@ To avoid any potential issue with character encoding, it is highly recommended t
 
 ### Quotes
 
-CSS does not require strings to be quoted, not even those containing spaces. Take font-family names for instance: it doesn't matter whether you wrap them in quotes for the CSS parser.
+CSS does not require strings to be quoted, not even those containing spaces. Take font-family names for instance: it doesn’t matter whether you wrap them in quotes for the CSS parser.
 
-Because of this, Sass *also* does not require strings to be quoted. Even better (and *luckily*, you'll concede), a quoted string is strictly equivalent to its unquoted twin (e.g. `'abc'` is strictly equal to `abc`).
+Because of this, Sass *also* does not require strings to be quoted. Even better (and *luckily*, you’ll concede), a quoted string is strictly equivalent to its unquoted twin (e.g. `'abc'` is strictly equal to `abc`).
 
 That being said, languages that do not require strings to be quoted are definitely a minority and so, **strings should always be wrapped with single quotes** (`'`) in Sass (single being easier to type than double on *qwerty* keyboards). Besides consistency with other languages, including CSS' cousin JavaScript, there are several reasons for this choice:
 
@@ -137,7 +137,7 @@ $font-type: unquote('sans-serif')
 
 Hence, we can make a distinction between strings intended to be used as CSS values (CSS identifiers) like in the previous example, and strings when sticking to the Sass data type, for instance map keys.
 
-We don't quote the former, but we do wrap the latter in single quotes.
+We don’t quote the former, but we do wrap the latter in single quotes.
 
 ### Strings containing quotes
 
@@ -401,9 +401,9 @@ Appending a unit as a string to a number results in a string, preventing any add
 
 ### Magic numbers
 
-"Magic number" is an [old school programming](http://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants) term for *unnamed numerical constant*. Basically, it's just a random number that happens to *just work*™ yet is not tied to any logical explanation.
+"Magic number" is an [old school programming](http://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants) term for *unnamed numerical constant*. Basically, it’s just a random number that happens to *just work*™ yet is not tied to any logical explanation.
 
-Needless to say **magic numbers are a plague and should be avoided at all costs**. When you cannot manage to find a reasonable explanation for why a number works, add an extensive comment explaining how you got there and why you think it works. Admitting you don't know why something works is still more helpful to the next developer than them having to figure out what's going on from scratch.
+Needless to say **magic numbers are a plague and should be avoided at all costs**. When you cannot manage to find a reasonable explanation for why a number works, add an extensive comment explaining how you got there and why you think it works. Admitting you don’t know why something works is still more helpful to the next developer than them having to figure out what’s going on from scratch.
 
 <div class="code-block">
   <div class="code-block__wrapper" data-syntax="scss">
@@ -578,7 +578,7 @@ The benefit of using `mix` rather than one of the two aforementioned functions i
   <figcaption>Illustration of the difference between <code>lighten</code>/<code>darken</code> and <code>mix</code> by <a href="http://codepen.io/KatieK2/pen/tejhz/" target="_blank">KatieK</a></figcaption>
 </figure>
 
-If you don't want to write the `mix` function every time, you can create two easy-to-use functions `tint` and `shade` (which are also a part of [Compass](http://compass-style.org/reference/compass/helpers/colors/#shade)) to do the same thing:
+If you don’t want to write the `mix` function every time, you can create two easy-to-use functions `tint` and `shade` (which are also a part of [Compass](http://compass-style.org/reference/compass/helpers/colors/#shade)) to do the same thing:
 
 <div class="code-block">
   <div class="code-block__wrapper" data-syntax="scss">
@@ -624,7 +624,7 @@ If you don't want to write the `mix` function every time, you can create two eas
 </div>
 
 <div class="note">
-  <p>The <a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#scale_color-instance_method"><code>scale-color</code></a> function is designed to scale properties more fluidly by taking into account how high or low they already are. It should provide results that are as nice as <code>mix</code>'s but with a clearer calling convention. The scaling factor isn't exactly the same though.</p>
+  <p>The <a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#scale_color-instance_method"><code>scale-color</code></a> function is designed to scale properties more fluidly by taking into account how high or low they already are. It should provide results that are as nice as <code>mix</code>’s but with a clearer calling convention. The scaling factor isn’t exactly the same though.</p>
 </div>
 
 
@@ -633,7 +633,7 @@ If you don't want to write the `mix` function every time, you can create two eas
 
 * [A Visual Guide to Sass & Compass Color Functions](http://jackiebalzer.com/color)
 * [How to Programmatically Go From One Color to Another](http://thesassway.com/advanced/how-to-programtically-go-from-one-color-to-another-in-sass)
-* [Sass Color Variables That Don't Suck](http://davidwalsh.name/sass-color-variables-dont-suck)
+* [Sass Color Variables That Don’t Suck](http://davidwalsh.name/sass-color-variables-dont-suck)
 * [Using Sass to Build Color Palettes](http://www.sitepoint.com/using-sass-build-color-palettes/)
 * [Dealing with Color Schemes in Sass](http://www.sitepoint.com/dealing-color-schemes-sass/)
 
@@ -742,7 +742,7 @@ $shadows: $shadows, $shadow
 
 ## Maps
 
-Since Sass 3.3, stylesheet authors can define maps &mdash; the Sass term for associative arrays, hashes or even JavaScript objects. A map is a data structure mapping keys (that can be any data type, including maps although I wouldn't recommend it) to values of any type.
+Since Sass 3.3, stylesheet authors can define maps &mdash; the Sass term for associative arrays, hashes or even JavaScript objects. A map is a data structure mapping keys (that can be any data type, including maps although I wouldn’t recommend it) to values of any type.
 
 Maps should be written as follows:
 

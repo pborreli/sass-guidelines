@@ -180,7 +180,7 @@ $baseline: 2em !global
 <div class="code-block">
   <div class="code-block__wrapper" data-syntax="scss">
 {% highlight scss %}
-/// Карта Z-index'ов, собирает все Z-слои приложения
+/// Карта Z-index’ов, собирает все Z-слои приложения
 /// @access private
 /// @type Map
 /// @prop {String} key - Имя слоя
@@ -204,7 +204,7 @@ $z-indexes: (
   </div>
   <div class="code-block__wrapper" data-syntax="sass">
 {% highlight sass %}
-/// Карта Z-index'ов, собирает все Z-слои приложения
+/// Карта Z-index’ов, собирает все Z-слои приложения
 /// @access private
 /// @type Map
 /// @prop {String} key - Имя слоя
